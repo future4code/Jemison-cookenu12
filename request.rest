@@ -1,0 +1,12 @@
+### Test
+
+GET http://localhost:3003/ping
+
+### Crate a new client
+
+POST http://localhost:3003/client
+Content-Type: application/json
+
+{
+    "name": "Karolina Marques"
+}
