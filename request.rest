@@ -10,3 +10,37 @@ Content-Type: application/json
 {
     "name": "Karolina Marques"
 }
+
+### Return All Clients
+
+GET  http://localhost:3003/clients
+Content-Type: application/json
+
+### Return All Products
+
+GET  http://localhost:3003/products
+Content-Type: application/json
+
+### Create Order
+
+POST   http://localhost:3003/order
+Content-Type: application/json
+
+{
+    "fk_client": 1,
+    "delivery_date": "2023/01/21",
+    "products":[
+        {
+            "id":1,
+            "qty":10
+        },
+        {
+            "id":5,
+            "qty":20
+        },
+        {
+            "id":8,
+            "qty": 50
+        }
+    ]
+}

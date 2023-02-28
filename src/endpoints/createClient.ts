@@ -12,7 +12,7 @@ export const createClient = async (req: Request, res: Response) => {
         await connection("Case_Clients").insert({
             name
         })
-        res.status(200).send("Clente criado com sucesso!")
+        res.status(200).send("Cliente criado com sucesso!")
 
     }catch(error: any){
         res.status(errorCode).send({message: error.message})
